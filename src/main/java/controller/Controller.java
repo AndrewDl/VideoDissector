@@ -228,9 +228,12 @@ public class Controller implements Initializable {
 
                     return;
                 }
+
+                processedFiles++;
+
                 for(BufferedImage frame : frames) {
                     try {
-                        Path p = Paths.get(file.getAbsoluteFile().toURI());
+                        Path p = Paths.get(filesToConvert.get(processedFiles).getAbsoluteFile().toURI());
                         BasicFileAttributes attributes = null;
 
                         attributes = Files.readAttributes(p,BasicFileAttributes.class);
@@ -257,7 +260,6 @@ public class Controller implements Initializable {
                     }
                 }
 
-                processedFiles++;
 
                 Platform.runLater(new Runnable() {
                     @Override

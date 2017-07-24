@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="VideoDissector.jar" size="5889109" download="eager" />
+    <jar href="VideoDissector.jar" size="5889082" download="eager" />
     <jar href="libraries\commons-net-3.5-sources.jar" size="433679" download="eager" />
     <jar href="libraries\commons-net-3.5.jar" size="303658" download="eager" />
     <jar href="libraries\commons-net-examples-3.5.jar" size="82453" download="eager" />

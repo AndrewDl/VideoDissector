@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="VideoDissector.jnlp">
+  <information>
+    <title>VideoDissector</title>
+    <vendor>Unknown</vendor>
+    <description>VideoDissector</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="VideoDissector.jar" size="5889109" download="eager" />
+    <jar href="libraries\commons-net-3.5-sources.jar" size="433679" download="eager" />
+    <jar href="libraries\commons-net-3.5.jar" size="303658" download="eager" />
+    <jar href="libraries\commons-net-examples-3.5.jar" size="82453" download="eager" />
+    <jar href="libraries\ffmpeg-2.1.1-android-arm.jar" size="5878630" download="eager" />
+    <jar href="libraries\ffmpeg-2.1.1-linux-x86.jar" size="5528902" download="eager" />
+    <jar href="libraries\ffmpeg-2.1.1-linux-x86_64.jar" size="5562192" download="eager" />
+    <jar href="libraries\ffmpeg-2.1.1-macosx-x86_64.jar" size="5494910" download="eager" />
+    <jar href="libraries\ffmpeg-2.1.1-windows-x86.jar" size="10720957" download="eager" />
+    <jar href="libraries\ffmpeg-2.1.1-windows-x86_64.jar" size="11225446" download="eager" />
+    <jar href="libraries\javacpp.jar" size="160677" download="eager" />
+    <jar href="libraries\javacv-android-arm.jar" size="3141247" download="eager" />
+    <jar href="libraries\javacv-linux-x86.jar" size="1775263" download="eager" />
+    <jar href="libraries\javacv-linux-x86_64.jar" size="1903104" download="eager" />
+    <jar href="libraries\javacv-macosx-x86_64.jar" size="1828476" download="eager" />
+    <jar href="libraries\javacv-windows-x86.jar" size="1352112" download="eager" />
+    <jar href="libraries\javacv-windows-x86_64.jar" size="1810497" download="eager" />
+    <jar href="libraries\javacv.jar" size="1153428" download="eager" />
+    <jar href="libraries\opencv-2.4.8-android-arm.jar" size="6521063" download="eager" />
+    <jar href="libraries\opencv-2.4.8-linux-x86.jar" size="5835417" download="eager" />
+    <jar href="libraries\opencv-2.4.8-linux-x86_64.jar" size="5815021" download="eager" />
+    <jar href="libraries\opencv-2.4.8-macosx-x86_64.jar" size="5459015" download="eager" />
+    <jar href="libraries\opencv-2.4.8-windows-x86.jar" size="11039869" download="eager" />
+    <jar href="libraries\opencv-2.4.8-windows-x86_64.jar" size="12025234" download="eager" />
+    <jar href="libraries\xstream-1.4.9.jar" size="549133" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="controller.Main"  name="VideoDissector" />
+  <update check="background"/>
+</jnlp>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<VBox prefWidth="370.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Controller">
+   <children>
+      <TitledPane animated="false" text="Input File">
+         <content>
+            <Pane>
+               <children>
+                  <VBox prefWidth="350.0" spacing="5.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label text="Path to folder" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="textFieldPath" prefWidth="200.0" promptText="e.g. C://folder1/folder2/" />
+                              <Button fx:id="buttonFileChooser" mnemonicParsing="false" onAction="#onChooseFile" prefWidth="20.0" text="Button" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Object" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="textFieldObject" prefWidth="224.0" promptText="e.g. MyMall" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Location" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="textFieldLocation" prefWidth="224.0" promptText="e.g. MainEntrance1" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Take each" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="textFieldFrameRate" prefWidth="224.0" promptText="5" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+         </content>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TitledPane>
+      <TitledPane animated="false" text="Output Info">
+         <content>
+            <Pane>
+               <children>
+                  <VBox prefWidth="350.0" spacing="5.0">
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label text="FTP Address" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="textFieldFTP" prefWidth="224.0" promptText="e.g. address.com" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="User" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <TextField fx:id="textFieldUser" prefWidth="224.0" promptText="e.g. username" />
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Pass" />
+                              <Region HBox.hgrow="ALWAYS" />
+                              <PasswordField fx:id="textFieldPass" prefWidth="224.0" />
+                           </children>
+                        </HBox>
+                        <CheckBox fx:id="checkBoxFTP" mnemonicParsing="false" text="Save on FTP" />
+                        <HBox>
+                           <children>
+                              <ProgressBar fx:id="progressBarProcessed" prefHeight="18.0" prefWidth="147.0" progress="0.0">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets top="5.0" />
+                                 </padding></ProgressBar>
+                              <Region HBox.hgrow="ALWAYS" />
+                              <Label fx:id="labelInfo" text="Processed n\a of n\a">
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button fx:id="buttonStart" mnemonicParsing="false" onAction="#onStart" text="Start" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="25.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </Pane>
+         </content>
+      </TitledPane>
+   </children>
+</VBox>
